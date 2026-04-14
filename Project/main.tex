@@ -22,7 +22,7 @@
 }
 
 % Title and author details
-\title{$l_1$-K-SVD}
+\title{$\ell_1$-K-SVD}
 \author{Presented by Dwaipayan Haldar}
 \institute{SR Number: 04-03-01-10-42-25-1-27128 \\ Indian Institute of Science, Bengaluru \\ \phantom{123} \\ Original Paper by Dr. Subhadip Mukherjee, \\ Rupam Basu, and Dr. Chandra Sekhar Seelamantula}
 \date{}
@@ -613,10 +613,10 @@ Case 1 has lesser search space and Case 2. So case 2 is likely to end up in a le
 
 \begin{frame}
 \vfill
-\centering{\Huge $l_1$-K-SVD}\vfill
+\centering{\Huge $\ell_1$-K-SVD}\vfill
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Basic Formulation}
+\begin{frame}{$\ell_1$-K-SVD - Basic Formulation}
     \[
     \min_{D,x_i} \sum_{i=1}^{N}\|y_i-Dx_i\|_1
     + \sum_{i=1}^{N}\lambda_i \|x_i\|_1
@@ -625,7 +625,7 @@ Case 1 has lesser search space and Case 2. So case 2 is likely to end up in a le
     \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Sparse Coding Step}
+\begin{frame}{$\ell_1$-K-SVD - Sparse Coding Step}
     \[
     \min_{x_i} \left\|y_i-\hat{D}x_i\right\|_1 + \lambda_i \|x_i\|_1
     \]
@@ -641,7 +641,7 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
 \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Sparse Coding Step}
+\begin{frame}{$\ell_1$-K-SVD - Sparse Coding Step}
     \[
     \min_{x_i} \left\|y_i-\hat{D}x_i\right\|_1 + \lambda_i \|x_i\|_1
     \]
@@ -658,7 +658,7 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
 \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Sparse Coding Step}
+\begin{frame}{$\ell_1$-K-SVD - Sparse Coding Step}
     \[
     \min_{x_i} \left\|y_i-\hat{D}x_i\right\|_1 + \lambda_i \|x_i\|_1
     \]
@@ -676,7 +676,7 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Dictionary Update Step}
+\begin{frame}{$\ell_1$-K-SVD - Dictionary Update Step}
     \[
     \min_{D,X} \|Y-DX\|_1
     \qquad
@@ -689,7 +689,7 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Dictionary Update Step}
+\begin{frame}{$\ell_1$-K-SVD - Dictionary Update Step}
     \[
     \min_{d_k,x_k} \|E_k-d_kx_k\|_1
     \qquad
@@ -711,7 +711,7 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Dictionary Update Step}
+\begin{frame}{$\ell_1$-K-SVD - Dictionary Update Step}
     \[
     \min_{d_k,x_k} \|E_k-d_kx_k\|_1
     \qquad
@@ -733,7 +733,7 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Dictionary Update Step}
+\begin{frame}{$\ell_1$-K-SVD - Dictionary Update Step}
     \[
     \min_{d_k,x_k} \|E_k-d_kx_k\|_1
     \qquad
@@ -755,8 +755,8 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Dictionary Update Step}
-    That $l_1$ norm can be approximated by reweighted $l_2$ metric 
+\begin{frame}{$\ell_1$-K-SVD - Dictionary Update Step}
+    That $\ell_1$ norm can be approximated by reweighted $l_2$ metric 
     \[
     \sum_{i=1}^{N}\|e_i-v_iu\|_1
     \approx
@@ -782,8 +782,8 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \phantom{This is for one iteration. This is done iteratively for 10 iterations.}
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Dictionary Update Step}
-    That $l_1$ norm can be approximated by reweighted $l_2$ metric 
+\begin{frame}{$\ell_1$-K-SVD - Dictionary Update Step}
+    That $\ell_1$ norm can be approximated by reweighted $l_2$ metric 
     \[
     \sum_{i=1}^{N}\|e_i-v_iu\|_1
     \approx
@@ -802,8 +802,8 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \phantom{This is for one iteration. This is done iteratively for 10 iterations.}
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Dictionary Update Step}
-    That $l_1$ norm can be approximated by reweighted $l_2$ metric 
+\begin{frame}{$\ell_1$-K-SVD - Dictionary Update Step}
+    That $\ell_1$ norm can be approximated by reweighted $l_2$ metric 
     \[
     \sum_{i=1}^{N}\|e_i-v_iu\|_1
     \approx
@@ -825,7 +825,7 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
     \]
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Final Algorithm to find the best u and v}
+\begin{frame}{$\ell_1$-K-SVD - Final Algorithm to find the best u and v}
 \scriptsize
 \begin{itemize}
     \item Input: Error matrix $E$, number of iterations $J$.
@@ -862,10 +862,9 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
 
 
  
-\begin{frame}{$l_1$-K-SVD - Remarks}
+\begin{frame}{$\ell_1$-K-SVD - Remarks}
 \begin{itemize}
-    \item \textbf{Pruning step (missing from the main algorithm):}
-    After each sparse coding step, any coefficient satisfying
+    \item After each sparse coding step, any coefficient satisfying
     \[
     |x_i(j)| < T_0 \cdot \|X\|_F
     \]
@@ -878,16 +877,14 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{$l_1$-K-SVD - Remarks}
+\begin{frame}{$\ell_1$-K-SVD - Remarks}
 \begin{itemize}
-    \item \textbf{Pruning step (missing from the main algorithm):}
-    After each sparse coding step, any coefficient satisfying
+    \item After each sparse coding step, any coefficient satisfying
     \[
     |x_i(j)| < T_0 \cdot \|X\|_F
     \]
     is pruned to zero. The paper uses $T_0 = 0.03$.
-    \item \textbf{Computationally expensive step:}
-    The dictionary update (Algorithm~1) is the bottleneck:
+    \item The dictionary update is the bottleneck:
     $K$ atoms $\times$ $J$ inner IRLS iterations, each an $m\times m$ linear solve.
     $\;\Rightarrow\;\mathcal{O}(K\cdot J\cdot m^3)$ work per outer iteration —
     significantly heavier than the single SVD per atom in K-SVD.
@@ -898,101 +895,74 @@ W_{2i}^{(k+1)}(j)=\frac{1}{\left|(x_i^{(k)})_j\right|+\epsilon}}
 
 \begin{frame}{Image Denoising — The Core Idea}
 \begin{itemize}
-    \item \textbf{Corrupted observation:} $y = Dx + w$, where $w$ is noise
+    \item $y = Dx + w$, where $w$ is noise
     (Gaussian, Laplacian, or missing pixels).
-    \item[] \phantom{\textbf{Learn the dictionary $D$:} Train on patches so that $D$
+    \item[] \phantom{Train on patches so that $D$
     captures dominant patterns — edges, textures, colour gradients.}
-    \item[] \phantom{\textbf{Sparse coding:} Given $D$ and noisy patch $y$, solve}
-    \item[] \mbox{}
+    \item[] \phantom{$\hat{y} = D\hat{x}$ — sparse $\hat{x}$ discards the noise component.}
 \end{itemize}
-\[
-\phantom{\hat{x} = \arg\min_{x}\; \|y - Dx\|_1 + \lambda\|x\|_1}
-\]
-\phantom{$\ell_1$ fidelity down-weights outlier pixels.}\\[0.3em]
-\phantom{\textbf{Reconstruct:} $\hat{y} = D\hat{x}$ — sparse $\hat{x}$ discards the noise component.}
 \end{frame}
 
 \begin{frame}{Image Denoising — The Core Idea}
 \begin{itemize}
-    \item \textbf{Corrupted observation:} $y = Dx + w$, where $w$ is noise
+    \item $y = Dx + w$, where $w$ is noise
     (Gaussian, Laplacian, or missing pixels).
-    \item \textbf{Learn the dictionary $D$:} Train on patches so that $D$
+    \item Train on patches so that $D$
     captures dominant patterns — edges, textures, colour gradients.
-    \item[] \phantom{\textbf{Sparse coding:} Given $D$ and noisy patch $y$, solve}
-    \item[] \mbox{}
+    \item[] \phantom{$\hat{y} = D\hat{x}$ — sparse $\hat{x}$ discards the noise component.}
 \end{itemize}
-\[
-\phantom{\hat{x} = \arg\min_{x}\; \|y - Dx\|_1 + \lambda\|x\|_1}
-\]
-\phantom{$\ell_1$ fidelity down-weights outlier pixels.}\\[0.3em]
-\phantom{\textbf{Reconstruct:} $\hat{y} = D\hat{x}$ — sparse $\hat{x}$ discards the noise component.}
 \end{frame}
 
 \begin{frame}{Image Denoising — The Core Idea}
 \begin{itemize}
-    \item \textbf{Corrupted observation:} $y = Dx + w$, where $w$ is noise
+    \item $y = Dx + w$, where $w$ is noise
     (Gaussian, Laplacian, or missing pixels).
-    \item \textbf{Learn the dictionary $D$:} Train on patches so that $D$
+    \item Train on patches so that $D$
     captures dominant patterns — edges, textures, colour gradients.
-    \item \textbf{Sparse coding:} Given $D$ and noisy patch $y$, solve
-    \item[] \mbox{}
+    \item $\hat{y} = D\hat{x}$ — sparse $\hat{x}$ discards the noise component.
 \end{itemize}
-\[
-\hat{x} = \arg\min_{x}\; \|y - Dx\|_1 + \lambda\|x\|_1
-\]
-$\ell_1$ fidelity down-weights outlier pixels.\\[0.3em]
-\phantom{\textbf{Reconstruct:} $\hat{y} = D\hat{x}$ — sparse $\hat{x}$ discards the noise component.}
-\end{frame}
-
-\begin{frame}{Image Denoising — The Core Idea}
-\begin{itemize}
-    \item \textbf{Corrupted observation:} $y = Dx + w$, where $w$ is noise
-    (Gaussian, Laplacian, or missing pixels).
-    \item \textbf{Learn the dictionary $D$:} Train on patches so that $D$
-    captures dominant patterns — edges, textures, colour gradients.
-    \item \textbf{Sparse coding:} Given $D$ and noisy patch $y$, solve
-    \item[] \mbox{}
-\end{itemize}
-\[
-\hat{x} = \arg\min_{x}\; \|y - Dx\|_1 + \lambda\|x\|_1
-\]
-$\ell_1$ fidelity down-weights outlier pixels.\\[0.3em]
-\textbf{Reconstruct:} $\hat{y} = D\hat{x}$ — sparse $\hat{x}$ discards the noise component.
 \end{frame}
 
 
-\begin{frame}{Paper Result — Figure 6 (Mukherjee et al.\ 2016)}
-\begin{center}
-    \includegraphics[width=0.92\textwidth, page=9]{l1-K-SVD.pdf}
-\end{center}
+\begin{frame}{Paper Result}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth]{Output_Images/Fig6.jpg}
+    \caption{Comparison of denoising performance of the K-SVD and
+    $\ell_1$-K-SVD algorithms for Laplacian noise:
+    (a)~ground truth (clean) image;
+    (b)~noisy input, PSNR\,=\,22.16\,dB, SSIM\,=\,0.36;
+    (c)~denoised image using K-SVD, PSNR\,=\,29.78\,dB, SSIM\,=\,0.73;
+    (d)~denoised image using $\ell_1$-K-SVD, PSNR\,=\,30.34\,dB, SSIM\,=\,0.81.
+    The values of $\lambda$ and $n_p$ chosen in the experiment are 1 and 0.05,
+    respectively.}
+\end{figure}
 \end{frame}
 
-\begin{frame}{Simulation Result A — Gaussian Noise ($\sigma = 20$)}
+\begin{frame}{Simulation Result A — Gaussian Noise}
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Output_Images/gaussian_noise.png}
-    \caption{4-panel comparison on an impressionist painting.
-    Left to right: clean image, noisy input ($\sigma=20/255$),
+    \caption{Left to right: clean image, noisy input ($\sigma=20/255$),
     K-SVD reconstruction, $\ell_1$-K-SVD reconstruction.
     Both methods perform similarly under Gaussian noise, consistent
     with the $\ell_2$ optimality of K-SVD in this regime.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Simulation Result B — Laplacian Noise (same RMS power)}
+\begin{frame}{Simulation Result B — Laplacian Noise}
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Output_Images/laplacian_noise.png}
-    \caption{Same test image corrupted with Laplacian noise at the same
-    RMS power as the Gaussian case.
+    \caption{Same test image corrupted with Laplacian noise.
     $\ell_1$-K-SVD achieves higher PSNR and SSIM because its
-    $\ell_1$ data-fidelity term is the natural MAP estimator under a
+    $\ell_1$ optimization term is the natural MAP estimator under a
     Laplacian noise model, while K-SVD's $\ell_2$ criterion is
     sensitive to heavy tails.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Simulation Result C — Inpainting (20\% Pixels Removed)}
+\begin{frame}{Simulation Result C — Inpainting}
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Output_Images/Removed_pixels.png}
@@ -1003,6 +973,34 @@ $\ell_1$ fidelity down-weights outlier pixels.\\[0.3em]
 \end{figure}
 \end{frame}
 
+\begin{frame}{References}
+\scriptsize
+\begin{enumerate}
+    \item M. Aharon, M. Elad, and A. Bruckstein,
+    ``K-SVD: An algorithm for designing overcomplete dictionaries for sparse
+    representation,''
+    \textit{IEEE Trans.\ Signal Process.},
+    vol.~54, no.~11, pp.~4311--4322, Nov.\ 2006.
+
+    \item M. Elad and M. Aharon,
+    ``Image denoising via sparse and redundant representations over learned
+    dictionaries,''
+    \textit{IEEE Trans.\ Image Process.},
+    vol.~15, no.~12, pp.~3736--3745, Dec.\ 2006.
+
+    \item S. Mukherjee, R. Basu, and C.~S. Seelamantula,
+    ``$\ell_1$-K-SVD: A robust dictionary learning algorithm with simultaneous
+    update,''
+    \textit{Signal Process.},
+    vol.~123, pp.~42--52, Jun.\ 2016.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+\vfill
+\centering{\Huge Thank you!}\vfill
+\end{frame}
 
 %  APPENDIX
 
@@ -1050,7 +1048,8 @@ W_1^{(k)}(j)=\frac{1}{|r_j^{(k)}|+\epsilon},\qquad W_2^{(k)}(i)=\frac{1}{|x_i^{(
 \[
 W_1^{(k)}(j)=\frac{1}{|r_j^{(k)}|+\epsilon},\qquad W_2^{(k)}(i)=\frac{1}{|x_i^{(k)}|+\epsilon}
 \]
-So $\sum_j|r_j|\approx r^TW_1r$ and $\sum_i|x_i|\approx x^TW_2x$.
+So $\sum_j|r_j|\approx r^TW_1r$ and $\sum_i|x_i|\approx x^TW_2x$. \\
+\phantom{123}\\
 \textbf{Surrogate quadratic:}
 \[
 \min_x\;(y-Dx)^TW_1(y-Dx)+\lambda\,x^TW_2x
@@ -1071,7 +1070,7 @@ So $\sum_j|r_j|\approx r^TW_1r$ and $\sum_i|x_i|\approx x^TW_2x$.
 \[
 \boxed{x^{(k+1)}=\left(D^TW_1^{(k)}D+\lambda W_2^{(k)}\right)^{-1}D^TW_1^{(k)}y}
 \]
-\textbf{Weight updates} (from definitions):
+\textbf{Weight updates}:
 \[
 W_1^{(k+1)}(j)=\frac{1}{\left|(y-Dx^{(k)})_j\right|+\epsilon},\qquad
 W_2^{(k+1)}(i)=\frac{1}{\left|x_i^{(k)}\right|+\epsilon}
@@ -1138,21 +1137,15 @@ This is exactly the $\ell_1$-K-SVD objective (Eq.\ 1 in the paper).
 \end{frame}
 
 \begin{frame}{Appendix C: The $\ell_p$-K-SVD Algorithm}
-\textbf{Generalised objective:}
+\textbf{Generalised objective:}($0<p\leq 1$)
 \[
 \min_{D,\,\mathbf{x}_n}\;\sum_{n=1}^{N}\|\mathbf{y}_n-D\mathbf{x}_n\|_p^p+\lambda_n\|\mathbf{x}_n\|_p^p
 \]
-\textbf{Generalized $p$-Gaussian Bayesian interpretation:}
+comes from the generalised p-gaussian distribution 
 \[
 p_{\mathrm{gen}}(\mathbf{u})\propto\prod_{j}\exp\!\left(-\frac{|u_j|^p}{p\,\sigma_n^p}\right)
 \]
 MAP maximisation $\Rightarrow$ the $\ell_p^p$ objective above.\\[0.4em]
-\phantom{\textbf{Modified IRLS weights} (sparse coding step):}
-\[
-\phantom{W_{1n}^{(k+1)}(j)=\frac{1}{\left|(\mathbf{y}_n-\hat{D}\mathbf{x}_n^{(k)})_j\right|^{2-p}+\epsilon},
-\quad
-W_{2n}^{(k+1)}(j)=\frac{1}{\left|(x_n^{(k)})_j\right|^{2-p}+\epsilon}}
-\]
 \end{frame}
 
 \begin{frame}{Appendix C: The $\ell_p$-K-SVD Algorithm}
@@ -1162,7 +1155,7 @@ W_{1n}^{(k+1)}(j)=\frac{1}{\left|(\mathbf{y}_n-\hat{D}\mathbf{x}_n^{(k)})_j\righ
 \quad
 W_{2n}^{(k+1)}(j)=\frac{1}{\left|(x_n^{(k)})_j\right|^{2-p}+\epsilon}
 \]
-\textbf{Modified dictionary update weight} (Algorithm~1, Step~1):
+\textbf{Modified dictionary update weight}:
 \[
 W_n^{(t+1)}(j)=\frac{1}{\left|(\mathbf{e}_n-v_n\mathbf{u}^{(t)})_j\right|^{2-p}+\epsilon}
 \]
@@ -1207,7 +1200,6 @@ Allow up to $T_0$ dictionary atoms to contribute — sparse, not binary.\\[0.3em
     \item \textit{Sparse coding step}: assign signals to atoms (K-means: nearest neighbour; K-SVD: OMP/BP)
     \item \textit{Dictionary update step}: update each atom/codeword given current assignments
 \end{itemize}
-K-SVD is to K-means as $\ell_0\leq T_0$ is to $\ell_0=1$.
 \end{frame}
 
 % Appendix E: Eckart–Young–Mirsky Theorem 
