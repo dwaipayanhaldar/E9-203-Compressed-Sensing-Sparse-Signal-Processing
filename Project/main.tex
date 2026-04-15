@@ -452,7 +452,7 @@ So, here is the easy solution:
 \begin{frame}{K-SVD - Dictionary Learning Step}
 Yes, we missed the sparsity. Here is the real solution. 
 \begin{itemize}
-    \item Define \( \omega_k = \{ i \mid 1 \leq i \leq n, \; x_k(i) \neq 0 \} \)
+    \item Define \( \omega_k = \{ i \mid 1 \leq i \leq n, \; x_k(i) \neq 0 \} \) (Here \(x_k \) is the column)
     \item[] \phantom{Define \( \Omega_k \) as a matrix of size \( N \times |\omega_k| \)
     with ones on the \( (\omega_k(i), i) \)-th entries and zeros elsewhere.}
     \item[] \mbox{}
@@ -468,7 +468,7 @@ Yes, we missed the sparsity. Here is the real solution.
 \begin{frame}{K-SVD - Dictionary Learning Step}
 Yes, we missed the sparsity. Here is the real solution. 
 \begin{itemize}
-    \item Define \( \omega_k = \{ i \mid 1 \leq i \leq n, \; x_k(i) \neq 0 \} \)
+    \item Define \( \omega_k = \{ i \mid 1 \leq i \leq n, \; x_k(i) \neq 0 \} \) (Here \(x_k \) is the column)
     \item Define \( \Omega_k \) as a matrix of size \( N \times |\omega_k| \)
     with ones on the \( (\omega_k(i), i) \)-th entries and zeros elsewhere.
     \item[] \mbox{}
@@ -484,7 +484,7 @@ Yes, we missed the sparsity. Here is the real solution.
 \begin{frame}{K-SVD - Dictionary Learning Step}
 Yes, we missed the sparsity. Here is the real solution. 
 \begin{itemize}
-    \item Define \( \omega_k = \{ i \mid 1 \leq i \leq n, \; x_k(i) \neq 0 \} \)
+    \item Define \( \omega_k = \{ i \mid 1 \leq i \leq n, \; x_k(i) \neq 0 \} \) (Here \(x_k \) is the column)
     \item Define \( \Omega_k \) as a matrix of size \( N \times |\omega_k| \) with ones on the \( (\omega_k(i), i) \)-th entries and zeros elsewhere.
     \item Change the minimization problem 
     \[
